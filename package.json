@@ -1,0 +1,27 @@
+{
+  "name": "challenge-ignite-nodejs-02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --loader tsx ./node_modules/.bin/knex",
+    "eslint": "eslint src --ext .ts --fix"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fastify": "^4.13.0",
+    "knex": "^2.4.2",
+    "sqlite3": "^5.1.4",
+    "typescript": "^4.9.5",
+    "zod": "^3.20.6"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^18.13.0",
+    "eslint": "^8.33.0",
+    "tsx": "^3.12.3"
+  }
+}
