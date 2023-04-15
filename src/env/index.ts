@@ -14,6 +14,7 @@ const envSchema = z.object({
       coerce: true,
     })
     .default(3333),
+  DATABASE_CLIENT: z.enum(['sqlite', 'pg']).default('sqlite'),
   DATABASE_URL: z.string(),
 })
 
