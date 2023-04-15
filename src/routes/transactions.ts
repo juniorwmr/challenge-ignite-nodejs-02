@@ -1,6 +1,6 @@
 import { randomUUID } from 'crypto'
 import { FastifyInstance } from 'fastify'
-import { knex } from '../database/database'
+import { knex } from '../database'
 import { checkSessionIdExists } from '../middlewares/check-session-id-exists'
 import { z } from 'zod'
 
