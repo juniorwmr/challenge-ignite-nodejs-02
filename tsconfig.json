@@ -10,8 +10,12 @@
     "strict": true /* Enable all strict type-checking options. */,
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
-    "rootDir": ".",
-    "outDir": "dist",
-    "baseUrl": "."
-  }
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*", "node_modules/*"]
+    }
+  },
+  "exclude": ["**/*.test.ts", "**/*.spec.ts", "**/*.sqlite"]
 }

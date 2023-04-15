@@ -1,0 +1,6 @@
+{
+  "loader": {
+    ".sqlite": "file"
+  },
+  "out-dir": "dist"
+}
