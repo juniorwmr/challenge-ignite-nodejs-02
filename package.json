@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "knex": "node ./node_modules/knex/bin/cli.js",
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
     "lint": "eslint src --ext .ts --fix",
     "test": "vitest",
     "build": "tsup src --out-dir dist"
@@ -36,7 +36,6 @@
     "knex": "^2.4.2",
     "minimatch": "^9.0.0",
     "pg": "^8.9.0",
-    "ts-node": "^10.9.1",
     "zod": "^3.20.2"
   }
 }
